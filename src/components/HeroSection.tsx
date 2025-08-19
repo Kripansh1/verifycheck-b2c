@@ -85,13 +85,13 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
+                className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group hubspot-embed"
                 onClick={scrollToForm}
-                className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
               >
                 Get Verified Now
+        
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-             
             </div>
 
             {/* Trust Indicators */}
