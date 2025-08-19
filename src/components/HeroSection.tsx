@@ -82,13 +82,7 @@ const HeroSection = () => {
                 Get Verified Now
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                Learn More
-              </Button>
+           
             </div>
 
             {/* Trust Indicators */}
