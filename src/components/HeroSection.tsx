@@ -26,6 +26,14 @@ const HeroSection = () => {
     }
   }, []);
 
+  // Smooth-scroll to the HubSpot form container
+  const scrollToForm = () => {
+    const el = document.querySelector('.hs-form-frame') || document.getElementById('hubspot-form');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -77,18 +85,13 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
+                onClick={scrollToForm}
                 className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow group"
               >
                 Get Verified Now
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                Learn More
-              </Button>
+             
             </div>
 
             {/* Trust Indicators */}
