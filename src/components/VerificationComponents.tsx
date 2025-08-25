@@ -105,11 +105,7 @@ const VerificationComponents = () => {
                 </div>
 
                 {/* Footer */}
-                <div className="flex items-center justify-between pt-4 mt-4 border-t border-border">
-                  <div className="flex items-center space-x-2">
-                    <Clock className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">2-5 business days</span>
-                  </div>
+                <div className="flex items-center justify-end pt-4 mt-4 border-t border-border">
                   <div className="flex items-center space-x-1">
                     <div className="w-2 h-2 bg-success rounded-full"></div>
                     <span className="text-sm text-success font-medium">Available</span>

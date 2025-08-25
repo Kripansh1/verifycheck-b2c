@@ -6,6 +6,8 @@ import WhyItMattersSection from "@/components/WhyItMattersSection";
 import VerificationComponents from "@/components/VerificationComponents";
 import ProcessSection from "@/components/ProcessSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
+import WhatsAppVerificationSection from "@/components/WhatsAppVerificationSection";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,6 +16,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <WhatsAppVerificationSection />
         <ServicesOverview />
         <ProfileVerificationSection />
         <WhyItMattersSection />
@@ -21,6 +24,7 @@ const Index = () => {
         <ProcessSection />
         <WhyChooseSection />
       </main>
+      <FloatingWhatsAppButton />
       <Footer />
     </div>
   );
